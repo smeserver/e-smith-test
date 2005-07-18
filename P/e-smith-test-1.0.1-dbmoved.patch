@@ -1,0 +1,12 @@
+diff -Nur -x '*.orig' -x '*.rej' e-smith-test-1.0.1/root/etc/e-smith/tests/configuration.conf mezzanine_patched_e-smith-test-1.0.1/root/etc/e-smith/tests/configuration.conf
+--- e-smith-test-1.0.1/root/etc/e-smith/tests/configuration.conf	2003-02-24 11:50:27.000000000 -0700
++++ mezzanine_patched_e-smith-test-1.0.1/root/etc/e-smith/tests/configuration.conf	2005-07-17 21:29:54.263281496 -0600
+@@ -36,7 +36,7 @@
+ LocalNetmask=255.255.255.0
+ MinUid=5000
+ PasswordSet=yes
+-PreviousConfiguration=/home/e-smith/configuration.previous
++PreviousConfiguration=/home/e-smith/db/configuration.previous
+ SMTPSmartHost=
+ SambaDomainMaster=no
+ SambaServerName=pretz
