@@ -2,13 +2,13 @@ Summary: e-smith server and gateway - testing infrastructure module
 %define name e-smith-test
 Name: %{name}
 %define version 1.0.1
-%define release 02sme01
+%define release 03
 Version: %{version}
 Release: %{release}
 License: Artistic
 Group: Networking/Daemons
 Source: %{name}-%{version}.tar.gz
-Patch0: e-smith-test-1.0.1-dbmoved.patch
+Patch0: e-smith-test-1.0.1-03.mitel_patch
 Packager: e-smith developers <bugs@e-smith.com>
 BuildRoot: /var/tmp/%{name}-%{version}-%{release}-buildroot
 BuildArchitectures: noarch
@@ -25,9 +25,9 @@ AutoReqProv: no
 e-smith server and gateway software - testing infrastructure module.
 
 %changelog
-* Sun Jul 17 2005 Shad L. Lords <slords@mail.com>
-- [1.0.1-02]sme01
-- Update for dbmove
+* Tue Aug  2 2005 Shad Lords <slords@email.com>
+- [1.0.1-03]
+- Update for move of default database location. [SF: 1216546]
 
 * Sun Sep 19 2004 Charlie Brady <charlieb@e-smith.com>
 - [1.0.1-02]
