@@ -2,7 +2,7 @@ Summary: e-smith server and gateway - testing infrastructure module
 %define name e-smith-test
 Name: %{name}
 %define version 1.0.1
-%define release 03
+%define release 03sme01
 Version: %{version}
 Release: %{release}
 License: Artistic
@@ -19,12 +19,15 @@ Requires: perl(Test::Inline) >= 0.14
 Requires: perl(Test::Harness::Straps) >= 0.10
 Requires: e-smith-lib >= 1.9.35
 BuildRequires: e-smith-devtools >= 1.7.1
-AutoReqProv: no
 
 %description
 e-smith server and gateway software - testing infrastructure module.
 
 %changelog
+* Thu Aug 19 2005 Gordon Rowell <gordonr@gormand.com.au>
+- [1.0.1-03sme01]
+- Actually remove AutoReqProv header (see 1.0.1-02)
+
 * Tue Aug  2 2005 Shad Lords <slords@email.com>
 - [1.0.1-03]
 - Update for move of default database location. [SF: 1216546]
