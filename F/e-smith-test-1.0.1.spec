@@ -2,7 +2,7 @@ Summary: e-smith server and gateway - testing infrastructure module
 %define name e-smith-test
 Name: %{name}
 %define version 1.0.1
-%define release 03sme01
+%define release 04
 Version: %{version}
 Release: %{release}
 License: Artistic
@@ -24,8 +24,8 @@ BuildRequires: e-smith-devtools >= 1.7.1
 e-smith server and gateway software - testing infrastructure module.
 
 %changelog
-* Thu Aug 19 2005 Gordon Rowell <gordonr@gormand.com.au>
-- [1.0.1-03sme01]
+* Fri Aug 19 2005 Gordon Rowell <gordonr@gormand.com.au>
+- [1.0.1-04]
 - Actually remove AutoReqProv header (see 1.0.1-02)
 
 * Tue Aug  2 2005 Shad Lords <slords@email.com>
