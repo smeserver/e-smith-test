@@ -1,0 +1,13 @@
+Index: e-smith-test/e-smith-test.spec
+diff -u e-smith-test/root/sbin/e-smith/smoketest:1.6 e-smith-test/root/sbin/e-smith/smoketest:1.7
+--- e-smith-test/root/sbin/e-smith/smoketest:1.6	Wed Sep  3 16:53:09 2003
++++ e-smith-test/root/sbin/e-smith/smoketest	Thu Sep 22 14:46:13 2005
+@@ -42,6 +42,8 @@
+ 
+ my @tests = ();
+ find \&wanted, '.';
++# Let's sort to get the order correct
++@tests = sort @tests;
+ 
+ if( @tests ) {
+     print "Running tests in $testdir.\n";
