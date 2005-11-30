@@ -2,13 +2,15 @@ Summary: e-smith server and gateway - testing infrastructure module
 %define name e-smith-test
 Name: %{name}
 %define version 1.0.1
-%define release 04
+%define release 07
 Version: %{version}
 Release: %{release}
 License: Artistic
 Group: Networking/Daemons
 Source: %{name}-%{version}.tar.gz
 Patch0: e-smith-test-1.0.1-03.mitel_patch
+Patch1: e-smith-test-1.0.1-05.mitel_patch
+Patch2: e-smith-test-1.0.1-06.mitel_patch
 Packager: e-smith developers <bugs@e-smith.com>
 BuildRoot: /var/tmp/%{name}-%{version}-%{release}-buildroot
 BuildArchitectures: noarch
@@ -24,6 +26,17 @@ BuildRequires: e-smith-devtools >= 1.7.1
 e-smith server and gateway software - testing infrastructure module.
 
 %changelog
+* Wed Nov 30 2005 Gordon Rowell <gordonr@gormand.com.au> 1.0.1-07
+- Bump release number only
+
+* Thu Sep 22 2005 Trevor Poole <trevorp@e-smith.com>
+- [1.0.1-06]
+- Rollback change to smoketest
+
+* Thu Sep 22 2005 Trevor Poole <trevorp@e-smith.com>
+- [1.0.1-05]
+- Add a sort to the test names in smoketest 
+
 * Fri Aug 19 2005 Gordon Rowell <gordonr@gormand.com.au>
 - [1.0.1-04]
 - Actually remove AutoReqProv header (see 1.0.1-02)
@@ -186,6 +199,8 @@ e-smith server and gateway software - testing infrastructure module.
 %prep
 %setup
 %patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %pre
 
