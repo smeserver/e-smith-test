@@ -1,16 +1,13 @@
 Summary: e-smith server and gateway - testing infrastructure module
 %define name e-smith-test
 Name: %{name}
-%define version 1.0.1
-%define release 07
+%define version 1.2.0
+%define release 01
 Version: %{version}
 Release: %{release}
 License: Artistic
 Group: Networking/Daemons
 Source: %{name}-%{version}.tar.gz
-Patch0: e-smith-test-1.0.1-03.mitel_patch
-Patch1: e-smith-test-1.0.1-05.mitel_patch
-Patch2: e-smith-test-1.0.1-06.mitel_patch
 Packager: e-smith developers <bugs@e-smith.com>
 BuildRoot: /var/tmp/%{name}-%{version}-%{release}-buildroot
 BuildArchitectures: noarch
@@ -26,6 +23,9 @@ BuildRequires: e-smith-devtools >= 1.7.1
 e-smith server and gateway software - testing infrastructure module.
 
 %changelog
+* Thu Mar 16 2006 Gordon Rowell <gordonr@gormand.com.au> 1.2.0-01
+- Roll stable stream version. [SME: 1016]
+
 * Wed Nov 30 2005 Gordon Rowell <gordonr@gormand.com.au> 1.0.1-07
 - Bump release number only
 
@@ -198,9 +198,6 @@ e-smith server and gateway software - testing infrastructure module.
 
 %prep
 %setup
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
 
 %pre
 
