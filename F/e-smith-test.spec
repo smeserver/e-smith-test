@@ -2,13 +2,13 @@ Summary: e-smith server and gateway - testing infrastructure module
 %define name e-smith-test
 Name: %{name}
 %define version 1.2.0
-%define release 01
+%define release 2
 Version: %{version}
-Release: %{release}
+Release: %smerelease %{release}
+Packager: %{_packager}
 License: Artistic
 Group: Networking/Daemons
 Source: %{name}-%{version}.tar.gz
-Packager: e-smith developers <bugs@e-smith.com>
 BuildRoot: /var/tmp/%{name}-%{version}-%{release}-buildroot
 BuildArchitectures: noarch
 Requires: perl
@@ -23,6 +23,10 @@ BuildRequires: e-smith-devtools >= 1.7.1
 e-smith server and gateway software - testing infrastructure module.
 
 %changelog
+* Thu Dec 07 2006 Shad L. Lords <slords@mail.com>
+- Update to new release naming.  No functional changes.
+- Make Packager generic
+
 * Thu Mar 16 2006 Gordon Rowell <gordonr@gormand.com.au> 1.2.0-01
 - Roll stable stream version. [SME: 1016]
 
