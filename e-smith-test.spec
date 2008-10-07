@@ -1,8 +1,10 @@
+# $Id: e-smith-test.spec,v 1.2 2008/10/07 19:23:22 slords Exp $
+
 Summary: e-smith server and gateway - testing infrastructure module
 %define name e-smith-test
 Name: %{name}
-%define version 1.2.0
-%define release 2
+%define version 2.0.0
+%define release 1
 Version: %{version}
 Release: %{release}%{?dist}
 License: Artistic
@@ -22,6 +24,9 @@ BuildRequires: e-smith-devtools >= 1.7.1
 e-smith server and gateway software - testing infrastructure module.
 
 %changelog
+* Tue Oct 7 2008 Shad L. Lords <slords@mail.com> 2.0.0-1.sme
+- Roll new stream to separate sme7/sme8 trees [SME: 4633]
+
 * Sun Apr 29 2007 Shad L. Lords <slords@mail.com>
 - Clean up spec so package can be built by koji/plague
 
